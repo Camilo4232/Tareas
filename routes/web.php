@@ -17,6 +17,7 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+
 $router->post('/tareas', 'TareaController@create');
 $router->put('/tareas/{id}', 'TareaController@update');
 $router->delete('/tareas/{id}', 'TareaController@delete');
