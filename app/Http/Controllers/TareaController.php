@@ -21,7 +21,8 @@ class TareaController extends Controller
         $tarea->titulo = $request->input('titulo');
         $tarea->descripcion = $request->input('descripcion');
         $tarea->fechaEstimadaFinalizacion = $request->input('fechaEstimadaFinalizacion');
-        $tarea->creadorTarea = $request->user()->nombre; 
+        //$tarea->creadorTarea = $request->user()->nombre; 
+        $tarea->creadorTarea = 1; 
         $tarea->idEmpleado = $request->input('idEmpleado');
         $tarea->idEstado = 1; 
         $tarea->idPrioridad = $request->input('idPrioridad');
